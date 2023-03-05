@@ -1,0 +1,6 @@
+filename: test.raw
+width: 320
+height: 240
+channels: 1
+fps: 18
+dtype: uint16
