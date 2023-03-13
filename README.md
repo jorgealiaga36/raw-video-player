@@ -2,7 +2,7 @@
 
 This proyect is an implementation of a .RAW video player or converter (into a .mkv file).
 
-<center><img src="data/frame.PNG"></center>
+<center><img src="data/image0.PNG"></center>
 
 ## 1. Initial Configuration
 
