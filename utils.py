@@ -100,7 +100,7 @@ class RawVideo:
         self.out_path = out_path
         self.mode = mode
 
-    def play(self, path):
+    def play(self):
         """
         Play a raw video
 
@@ -113,7 +113,7 @@ class RawVideo:
         delay = 1000 / self.metadata['fps']
         first_frame = True
 
-        os.chdir(path)
+        os.chdir(self.out_path)
 
         window_name = "Video Raw Player"
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
@@ -163,14 +163,14 @@ class RawVideo:
 
         cv2.destroyAllWindows()
 
-    def convert(self, path):
+    def convert(self):
         """
         Convert a raw video into a mkv video file.
 
         :param: path: path: output path to store video after conversion / type: string
         :return: anything
         """
-        os.chdir(path)
+        os.chdir(self.out_path)
         vw = cv2.VideoWriter(filename='video_output.mkv',
                              fourcc=cv2.VideoWriter_fourcc('F', 'F', 'V', '1'),
                              fps=self.metadata['fps'],
@@ -191,6 +191,6 @@ class RawVideo:
         Executing mode selected by user: play or convert video
         """
         if self.mode == 'play':
-            self.play(self.out_path)
+            self.play()
         else:
-            self.convert(self.out_path)
+            self.convert()
