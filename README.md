@@ -2,6 +2,8 @@
 
 This proyect is an implementation of a .RAW video player or converter (into a .mkv file).
 
+<img src="https://github.com/jorgealiaga36/nit-video-capture/tree/main/data/frame.PNG"> 
+
 ## 1. Initial Configuration
 
 1. Create (and activate) a new environment, named `raw-tool` with Python 3.9.
