@@ -9,7 +9,7 @@ This proyect is an implementation of a .RAW video player or converter (into a .m
 	- __Linux__ or __Mac__: 
 	```
 	conda create -n raw-tool python=3.9
-	source activate yolo-dect
+	source activate raw-tool
 	```
 	- __Windows__: 
 	```
