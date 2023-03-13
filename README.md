@@ -44,7 +44,7 @@ Where:
 * `--cfg-source` or `-cfgs`: Configuration file root.
 * `--output-source` or `-outs`: Output video root.
 
-## 3. Play instructions
+### 2.1. Play instructions
 
 Keys configurated for performing the following actions:
 
