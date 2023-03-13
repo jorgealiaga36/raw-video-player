@@ -2,7 +2,7 @@
 
 This proyect is an implementation of a .RAW video player or converter (into a .mkv file).
 
-<img src="https://github.com/jorgealiaga36/nit-video-capture/tree/main/data/frame.PNG"> 
+![Raw Video Player/Converter] (https://github.com/jorgealiaga36/nit-video-capture/tree/main/data/frame.PNG) 
 
 ## 1. Initial Configuration
 
