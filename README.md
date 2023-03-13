@@ -1,34 +1,29 @@
-# Real Time YOLOv5 Object Detection 
+# Raw Video Player/Converter
 
-This repository contains an implementation of a YOLOv5 model to make inferences on a Youtube video.
+This proyect is an implementation of a .RAW video player or converter (into a .mkv file).
 
 ## 1. Initial Configuration
 
-1. Create (and activate) a new environment, named `yolo-dect` with Python 3.9.
+1. Create (and activate) a new environment, named `raw-tool` with Python 3.9.
 
 	- __Linux__ or __Mac__: 
 	```
-	conda create -n yolo-dect python=3.9
+	conda create -n raw-tool python=3.9
 	source activate yolo-dect
 	```
 	- __Windows__: 
 	```
-	conda create --name yolo-dect python=3.9
-	activate yolo-dect
+	conda create --name raw-tool python=3.9
+	activate raw-tool
 	```
 
 2. Clone current proyect repository and navigate to the downloaded folder.
 ```
-git clone https://github.com/jorgealiaga36/yolov5-detection.git
-cd yolov5-detection
+git clone https://github.com/jorgealiaga36/raw-video-player.git
+cd raw-video-player
 ```
 
-3. Clone official repository of the YOLOv5 model.
-```
-git clone https://github.com/ultralytics/yolov5.git
-```
-
-4. Install required pip packages.
+3. Install required pip packages.
 ```
 pip install -r requirements.txt
 ```
@@ -40,13 +35,25 @@ For running the code:
 1. Make sure you are within the conda enviroment and the proyect directory previously cloned.
 2. Run the following command:
 ```
-~$ python yolov5-detection.py --url [link-to-video] --out-source [output-root] --name [video-name]
+~$ python raw_video_player.py --mode [mode-selected] --input-source [input-video-root] --cfg-source [conf-file-root] --output-source [-output-root]
 ```
 
 Where:
-* `--url` or `-u`: Link to video we want to detect.
-* `--out-source` or `-outs`: Directory to store video downloaded.
-* `--name` or `-n`: Downloaded video name.
+* `----mode` or `-m`: Mode selected (play or convert input video).
+* `--input-source` or `-ins`: Input video root.
+* `--cfg-source` or `-cfgs`: Configuration file root.
+* `--output-source` or `-outs`: Output video root.
+
+## 3. Play instructions
+
+Keys configurated for performing the following actions:
+
+* Press `space-bar`: Pause video.
+* Press `a`: Go a frame backwards.
+* Press `d`: Go a frame upwards.
+* Press `s`: Save frame.
+* Press `esc`: End playing video.
+
 
 
 
