@@ -39,7 +39,7 @@ For running the code:
 ```
 
 Where:
-* `----mode` or `-m`: Mode selected (play or convert input video).
+* `--mode` or `-m`: Mode selected (play or convert input video).
 * `--input-source` or `-ins`: Input video root.
 * `--cfg-source` or `-cfgs`: Configuration file root.
 * `--output-source` or `-outs`: Output video root.
